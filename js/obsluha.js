@@ -1,0 +1,1 @@
+const spravaPojisteni = new SpravaPojisteni();

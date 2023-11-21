@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-ExtraBold.ttf);
+  font-weight: bold;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  background-color: forestgreen;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+}
+
+.aktivni {
+  margin-top: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+body>header>h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+}
+
+#oApp-Section {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  max-width: 50%;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+/* vypínáme šipečky v number inputu při zobrazení na desktopu */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #66cc66;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+button {
+  width: 70px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #126212, #0e750e);
+  color: #fff;
+  cursor: pointer;
+}
+
+.seznam-pojistencu {
+  margin-top: 20px;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto 100px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #66cc66;
+  text-align: center;
+}
+
+th {
+  background: #126212;
+  color: #fff;
+}

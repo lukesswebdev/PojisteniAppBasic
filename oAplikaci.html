@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>O aplikaci</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    </head>
+
+    <body>
+        <header>
+            <h1>PojištěníApp</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pojištěnci</a></li>
+                    <li class="aktivni"><a href="oAplikaci.html">O aplikaci</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h2>O aplikaci</h2>
+            <section id="oApp-Section">
+                <p>
+                    Aplikace na přídávání nových pojištěnců a jejich následný výpis v
+                    tabulce. Aplikace využívá odesílání uživatelem získaných dat do
+                    localStorage. Kontroluje se taká zda uživatel vyplnil všechny
+                    požadované údaje a zda jsou vyplněné údaje ve správném formátu.
+                </p>
+            </section>
+        </article>
+
+        <!-- Načítáme javascript soubory ve správné pořadí pro funčknost aplikace -->
+        <script src="js/Pojistenec.js"></script>
+        <script src="js/SpravaPojisteni.js"></script>
+        <script src="js/obsluha.js"></script>
+    </body>
+
+</html>

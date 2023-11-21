@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Správa pojištění</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  </head>
+
+  <body>
+    <!-- Úvodní hlavička stránky s navigačním menu. -->
+    <header>
+      <h1>PojištěníApp</h1>
+      <nav>
+        <ul>
+          <li class="aktivni"><a href="index.html">Pojištěnci</a></li>
+          <li><a href="oAplikaci.html">O aplikaci</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <h2>Nový Pojištěnec</h2>
+      <section>
+        <!-- Formulář s políčky pro zadaní údajů vyplněných uživatelem -->
+        <form id="formular">
+          <label for="jmeno">Jméno:</label>
+          <input type="text" id="jmeno" required /><br />
+
+          <label for="prijmeni">Příjmení:</label>
+          <input type="text" id="prijmeni" required /><br />
+
+          <label for="vek">Věk:</label>
+          <input type="number" id="vek" required /><br />
+
+          <label for="telefon">Telefon:</label>
+          <input type="tel" id="telefon" required /><br />
+
+          <button type="button" id="ulozit">Uložit</button>
+        </form>
+
+        <h2>Seznam Pojištěnců</h2>
+        <!-- Zde vytváříme tabulku -->
+        <div class="seznam-pojistencu"></div>
+      </section>
+    </article>
+
+    <!-- Načítáme javascript soubory ve správné pořadí pro funčknost aplikace -->
+    <script src="js/Pojistenec.js"></script>
+    <script src="js/SpravaPojisteni.js"></script>
+    <script src="js/obsluha.js"></script>
+  </body>
+
+</html>
